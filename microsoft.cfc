@@ -36,7 +36,7 @@ component extends="oauth2" accessors="true" {
 	* @scope An optional array of values to pass through for scope access.
 	**/
 	public string function buildRedirectToAuthURL(
-		array scope
+		array scope = []
 	){
 		var sParams = {
 			'response_type' = 'code'
